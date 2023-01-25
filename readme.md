@@ -1,9 +1,9 @@
-###Informations
+## Informations
 
 L'objectif était de créer un site Web de covoiturage entre les étudiants et l'ISEN
 Le projet a été ralisé en 2021
 
-###Informations complémentaire
+## Informations complémentaire
 
 Dans un premier temps dans la page accueil dans un premier temps on choisit si on veut partir d’un isen ou y aller. Puis on choisit enfin la date, enfin vient la validation. Bien entendu pour pouvoir réserver un trajet il faut se connecter.
 
@@ -15,6 +15,7 @@ Pour l’inscription il faut mettre un nom, le prénom, le mail, un pseudonyme, 
 
 Dans mon compte on voit simplement nos propositions de trajet et ceux auquel on est inscrit.
 
+Voici les requêtes qui ont été nécessaires au fonctionnement du projet ;
 
       GET :
       
