@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Accueil</title>
+
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--Logo en bas de page facebook, linkedin, twitter-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/ajax.js" defer></script>
+    <script src="js/user.js" defer></script>
+    <script src="js/listederoulante.js" defer></script>
+    <script src="js/style.js" defer></script>
+
+</head>
+
+<body>
+
+    <div>
+        <ul id="nav">
+            <li><a href="index.html">Accueil</a></li>
+            <li id=centernav>
+                <p>NOM</p>
+            </li>
+            <li><a href="creationcourse">Proposer une course</a></li>
+            <li><a href="connexion.html" id='connect'>Connexion</a></li>
+            <li><a href="compte.html" id='accompt'>Mon compte</a></li>
+        </ul>
+    </div>
+
+    <div id='inutile'>
+    </div>
+
+    <div id='rechercher'>
+        <div class="rond">
+            <form>
+                <div class="padding1">
+                    <div class="gauche">
+                        <input type="radio" id="partir" name="type" value="partir" checked="checked">
+                        <label for="partir">Partir d'un Isen</label>
+                    </div>
+                    <div class="droite">
+                        <input type="radio" id="aller" name="type" value="aller">
+                        <label for="aller">Aller ver un Isen</label>
+                    </div>
+                </div>
+
+                <div class="padding1">
+                    <div class="gauche">
+                        <label for="ville">Choisir votre ville : </label><br>
+                        <select id="ville" name="ville" class="input">
+                        <option value="gouesnou">Gouesnou</option>
+                        <option value="guipavas">Guipavas</option>      
+                    </select>
+                    </div>
+
+                    <div class="droite">
+                        <label for="isen">Choisir un Isen : </label><br>
+                        <select id="isen" name="isen" class='input'> 
+                        </select>
+                    </div>
+                </div>
+
+                <div class="center">
+                    <label for="datedepart">Date de départ : </label><br>
+                    <input type="date" id="datedepart" name="datedepart" max="2100-01-01" min="2021-01-01"><br>
+                </div>
+
+                <div class="center">
+                    <input type="submit" value="Valider" class="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id='nbresultat'> </div>
+    <div id='listeresultat'></div>
+
+    <div class="footer">
+        <div class="reseau">
+            <p class="footer2">Suivez nous sur :</p>
+            <span class="fa-lg">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            class="fa fa-facebook"
+          ></a>
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            class="fa fa-twitter"
+          ></a>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            class="fa fa-linkedin"
+          ></a>
+        </span>
+        </div>
+
+        <div class="text-footer">
+            <p>© Copyright 2021. Mathis QUEMENER | Thomas ESNAULT. Tous droits réservés.</p>
+        </div>
+    </div>
+</body>
+
+</html>

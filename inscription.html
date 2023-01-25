@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inscription</title>
+
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--Logo en bas de page facebook, linkedin, twitter-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/ajax.js" defer></script>
+    <script src="js/user.js" defer></script>
+    <script src="js/style.js" defer></script>
+
+</head>
+
+<body>
+
+    <div>
+        <ul id="nav">
+            <li><a href="index.html">Accueil</a></li>
+            <li id=centernav>
+                <p>NOM</p>
+            </li>
+            <li><a href="creationcourse">Proposer une course</a></li>
+            <li><a href="connexion.html" id='connect'>Connexion</a></li>
+        </ul>
+    </div>
+
+    <div id='inutile'>
+    </div>
+
+    <div id="user-add" class="container minheight">
+        <form method="post">
+
+            <label for="nom">Nom :</label><br>
+            <input type="text" id="nom" name="nom"><br>
+
+            <label for="prenom">Prenom :</label><br>
+            <input type="text" id="prenom" name="prenom"><br>
+
+            <label for="email">Mail :</label><br>
+            <input type="text" id="email" name="email"><br>
+
+            <label for="pseudo">Pseudonyme :</label><br>
+            <input type="text" id="pseudo" name="pseudo"><br>
+
+            <label for="telephone">Téléphone :</label><br>
+            <input type="text" id="telephone" name="telephone"><br>
+
+            <label for="password">Mot de passe :</label><br>
+            <input type="password" id="password" name="password"><br>
+
+            <label for="password2">Confirmation du mot de passe :</label><br>
+            <input type="password" id="password2" name="password2"><br>
+
+            <input type="submit" value="Inscription">
+        </form>
+    </div>
+    <div id="info"></div>
+
+    <a href="connexion.html">Connexion</a>
+
+    <div class="footer">
+        <div class="reseau">
+            <p class="footer2">Suivez nous sur :</p>
+            <span class="fa-lg">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            class="fa fa-facebook"
+          ></a>
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            class="fa fa-twitter"
+          ></a>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            class="fa fa-linkedin"
+          ></a>
+        </span>
+        </div>
+
+        <div class="text-footer">
+            <p>© Copyright 2021. Mathis QUEMENER | Thomas ESNAULT. Tous droits réservés.</p>
+        </div>
+    </div>
+</body>
+
+</html>

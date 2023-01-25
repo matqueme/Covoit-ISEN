@@ -1,0 +1,334 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: "Muli", sans-serif;
+}
+
+
+/*-----------------------Bar de navigation-----------------------------------*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(238, 238, 238);
+    position: fixed;
+    transition: background-color 1s;
+    width: 100%;
+}
+
+li :not(#connect) {
+    float: left;
+}
+
+#connect {
+    float: right;
+}
+
+#centernav {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    color: rgb(54, 54, 54);
+}
+
+
+/* lien dans nav bar*/
+
+li a {
+    display: block;
+    color: rgb(54, 54, 54);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: rgb(54, 54, 54);
+    transition: width .3s;
+}
+
+li a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+#inutile {
+    padding-top: 70px;
+}
+
+
+/*-------------------Footer------------------------*/
+
+
+/*Logo Reseau sociaux Footer*/
+
+.footer {
+    background-color: rgb(17, 17, 17);
+    height: 250px;
+    width: 100%;
+    position: relative;
+}
+
+.reseau {
+    position: absolute;
+    top: 0;
+    transform: translate(50%, 5%);
+    right: 50%;
+    text-align: center;
+    color: white;
+}
+
+.fa {
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa-facebook {
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    width: 20px;
+    margin: 5px 15px;
+}
+
+.fa-facebook:hover {
+    background: #3B5998;
+}
+
+.fa-twitter {
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    width: 20px;
+    margin: 5px 15px;
+}
+
+.fa-twitter:hover {
+    background: #55ACEE;
+}
+
+.fa-linkedin {
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    width: 20px;
+    margin: 5px 15px;
+}
+
+.fa-linkedin:hover {
+    background: #0077b5;
+}
+
+.foimg {
+    width: 50px;
+}
+
+.text-footer {
+    position: absolute;
+    color: white;
+    bottom: 0%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 0%);
+}
+
+
+/*------------------------Division---------------------------*/
+
+.minheight {
+    min-height: 500px;
+}
+
+
+/*------------------------Forme ronde-----------------*/
+
+.rond {
+    border-radius: 10px;
+    border: 4px solid rgb(54, 54, 54);
+    padding: 15px;
+    font-size: 20px;
+    box-shadow: 3px 3px 3px rgb(153, 153, 153);
+}
+
+.gauche {
+    width: 48%;
+    float: left;
+    text-align: center;
+    margin: 10px 1%;
+}
+
+.droite {
+    width: 48%;
+    float: right;
+    text-align: center;
+    margin: 10px 1%;
+}
+
+.center {
+    text-align: center;
+    margin: 10px;
+}
+
+.padding1 {
+    margin: 10px;
+}
+
+.submit {
+    background-color: rgb(255, 82, 51);
+    border: 0px;
+    font-family: "Muli", sans-serif;
+    color: white;
+    padding: 5px 15px;
+    border: 2px solid rgb(255, 82, 51);
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+    outline: none;
+    font-size: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.submit:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 82, 51);
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+}
+
+.input {
+    /* A reset of styles, including removing the default dropdown arrow*/
+    appearance: none;
+    color: #363636;
+    background-color: transparent;
+    padding: 3px 1em 3px 3px;
+    margin-top: 5px;
+    font-size: 18px;
+    cursor: inherit;
+    line-height: inherit;
+    border: solid 1.5px #696969;
+    border-radius: 7px;
+    z-index: 1;
+    outline: none;
+}
+
+#rechercher {
+    margin: 10px;
+}
+
+
+/*---------------------------Resultat index-----------------------------*/
+
+.pointhaut {
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(5, 71, 82);
+    border-radius: 50%;
+    transform: translate(0%, 260%);
+}
+
+.pointbas {
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(5, 71, 82);
+    border-radius: 50%;
+    transform: translate(0%, -230%);
+}
+
+.traitbas {
+    width: 4px;
+    height: calc(13px);
+    background: rgb(5, 71, 82);
+    height: 50px;
+    transform: translate(75%, -30%);
+}
+
+.traithaut {
+    width: 4px;
+    height: calc(13px);
+    background: rgb(5, 71, 82);
+    height: 50px;
+    transform: translate(75%, 50%);
+}
+
+.design {
+    float: left;
+}
+
+.lieu_depart,
+.lieu_arrivee {
+    padding-left: 30px;
+    width: 40%;
+    float: left;
+}
+
+.hdepart,
+.harrivee {
+    text-align: center;
+    width: 20%;
+    float: left;
+}
+
+.nb_place_libre,
+.prix {
+    width: 29%;
+    float: right;
+    text-align: right;
+}
+
+.bouton_reserver {
+    width: 100%;
+    text-align: center;
+}
+
+.resultat {
+    margin: 20px 10%;
+}
+
+#listeresultat {
+    min-height: 150px;
+}
+
+.reserverbouton {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(69, 156, 28);
+    border: 0px;
+    padding: 5px;
+    border: 2px solid rgb(69, 156, 28);
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.reserverbouton:hover {
+    background-color: rgb(69, 156, 28);
+    color: white;
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+}
+
+#nbresultat {
+    margin: 40px 10% -17px 10%;
+    font-weight: bold;
+}
+
+
+/*-------------------------------------------*/

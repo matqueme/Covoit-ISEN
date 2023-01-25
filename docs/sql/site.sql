@@ -1,0 +1,9 @@
+INSERT INTO site(inse,etablissement) VALUES ('29019','ISEN Brest');
+INSERT INTO site(inse,etablissement) VALUES ('33063','ISEN Bordeaux');
+INSERT INTO site(inse,etablissement) VALUES ('14118','ISEN Caen');
+INSERT INTO site(inse,etablissement) VALUES ('59350','ISEN Lille');
+INSERT INTO site(inse,etablissement) VALUES ('13055','ISEN Marseille');
+INSERT INTO site(inse,etablissement) VALUES ('44109','ISEN Nantes');
+INSERT INTO site(inse,etablissement) VALUES ('30189','ISEN Nimes');
+INSERT INTO site(inse,etablissement) VALUES ('35238','ISEN Rennes');
+INSERT INTO site(inse,etablissement) VALUES ('83137','ISEN Toulon');
